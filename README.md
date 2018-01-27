@@ -9,6 +9,10 @@ Sie sind herzlich eingeladen sich zu beteiligen und weitere Beispiele hier hinzu
 
 Dank der Community Edition von IceBreak kann jeder kostenlos damit entwickeln!
 
+Weitere Infos finden Sie auf meiner Website:
+
+www.mlitters.com
+
 Viel Spaß damit
 
 Ihr 
