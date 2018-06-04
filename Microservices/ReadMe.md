@@ -6,5 +6,5 @@ Durch das ILE Konzept von IBM eignet sich die IBM i Plattform ideal hierfür.
 
 Weitere Informationen finden Sie auf meiner Website:
 
-www.mlitters.com
+www.mlitters.com/IceBreak.aspx
 
