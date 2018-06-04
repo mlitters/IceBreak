@@ -1,0 +1,189 @@
+<!--#tag="Init"-->
+<html lang="de">
+
+<link href=".././Styles/Site.css" rel="stylesheet" type="text/css" />
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<!-- Load billboard.js with style -->
+<script src=".././JavaScript/billboard.js"></script>
+<link href=".././Styles/billboard.css" rel="stylesheet" type="text/css" />
+
+<div id="wrapper">
+    <h1 style="text-align: center">IceBreak bringt RPG mit HTML5 zusammen</h1>
+    <div id="links">
+        <br />
+        <form name="form1" method="post" action="chartform.rpgle">
+            <fieldset>
+                <legend>Bitte geben Sie die jährlichen Umsatzzahlen ein:</legend>
+                <p class="fieldP">
+                    <label>Januar
+                        <input class="input-group" name="januar" value="<%= Form('januar') %>">
+                    </label>
+                </p>
+                <p class="fieldP">
+                    <label>Februar
+                        <input class="input-group" name="februar" required value="<%= Form('februar') %>">
+                    </label>
+                </p>
+                <p class="fieldP">
+                    <label>März
+                        <input class="input-group" type="number" name="maerz" value="<%= Form('maerz') %>">
+                    </label>
+                </p>
+                <input class="send-btn" type="submit" name="Submit" value="Speichern">
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label>Landauswahlbeispiel
+                        <input id="country" name="country" list="country-names" type="text" placeholder="Land">
+                        <datalist id="country-names">
+                            <option label="Deutschland" value="Deutschland"></option>
+                            <option label="Österreich" value="Österreich"></option>
+                            <option label="Schweiz" value="Schweiz"></option>
+                            <option label="Frankreich" value="Frankreich"></option>
+                        </datalist>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div id="mitte">
+        <div id="chart">
+            <script>
+                var parser = new DOMParser;
+                var dom = parser.parseFromString('<%= pJson2 %>', 'text/html');
+                var data = JSON.stringify(eval('(' + dom.body.textContent + ')'));
+                var jsonData = JSON.parse(data);
+                console.log(jsonData);
+                var chart = bb.generate(jsonData);
+            </script>
+        </div>
+    </div>
+    <div id="rechts">
+        <h1>Umsatzzahlen Vorjahr</h1>
+        <br/>
+        <table class="gradienttable">
+            <tr>
+                <th>
+                    <p>Monat</p>
+                </th>
+                <th>
+                    <p>Halbjahr 1</p>
+                </th>
+                <th>
+                    <p>Halbjahr 2</p>
+                </th>
+            </tr>
+            <!--#tag="Example"-->
+            <tr>
+                <td>
+                    <p>
+                        1 / 7
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <%= %char(chartDS.jan) %>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <%= %char(chartDS.jul) %>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        2 / 8
+                    </p>
+                </td>
+
+                <td>
+                    <p>
+                        <%= %char(chartDS.feb) %>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <%= %char(chartDS.aug) %>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        3 / 9
+                    </p>
+                </td>
+
+                <td>
+                    <p>
+                        <%= %char(chartDS.mar) %>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <%= %char(chartDS.sep) %>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        4 / 10
+                    </p>
+                </td>
+
+                <td>
+                    <p>
+                        <%= %char(chartDS.apr) %>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <%= %char(chartDS.okt) %>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        5 / 11
+                    </p>
+                </td>
+
+                <td>
+                    <p>
+                        <%= %char(chartDS.mai) %>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <%= %char(chartDS.nov) %>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        6 / 12
+                    </p>
+                </td>
+
+                <td>
+                    <p>
+                        <%= %char(chartDS.jun) %>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <%= %char(chartDS.dez) %>
+                    </p>
+                </td>
+            </tr>
+            <!--#tag="End"-->
+        </table>
+
+    </div>
+
+</html>
