@@ -1,6 +1,6 @@
 <%
 /* 
-    Smalles RPG Web App ever!?
+    Smallest RPG Web App ever!?
     Here you see, that IceBreak can even handle old RPG cycle to create Web Output.
     If this makes sense or not - who knows.
     The example should only show you that it does work!
