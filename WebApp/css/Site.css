@@ -1,0 +1,507 @@
+﻿/*  Example CSS für IceBreak example Programs
+    Please don't use this CSS as a Reference for your projects!
+    Only for testing and playing around!
+----------------------------------------------------------*/
+#wrapper {
+    /*margin: 0 auto; /* Zentriert das Layout  */
+    width: 100%;
+}
+
+#links {
+    background: #C8D8F1;
+    height: auto;
+    float: left;
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 15px;
+}
+
+#mitte {
+    background: #E5F2FB;
+    height: auto;
+    float: left;
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 15px;
+}
+
+#rechts {
+    background: #C8D8F1;
+    height: auto;
+    float: right;
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 15px;
+	margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    #mitte {
+        height: 600px;
+        width: 48%;
+    }
+
+    #rechts {
+        height: 600px;
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #wrapper {
+        max-width: 1200px;
+    }
+
+    #links {
+        height: 600px;
+        width: 30%;
+        margin-left: 10px;
+    }
+
+    #mitte {
+        height: 600px;
+        width: 34%;
+        margin-left: 10px;
+    }
+
+    #rechts {
+        height: 600px;
+        width: 30%;
+        float: left;
+        margin-left: 10px;
+    }
+}
+
+body {
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:link, a:visited {
+    color: #034af3;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #034af3;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #145717;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 2.4em;
+    padding-bottom: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2 {
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page {
+    width: 1035px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+    .header h1 {
+        font-weight: 700;
+        margin: 0px;
+        padding: 0px 0px 0px 20px;
+        color: #5e1515;
+        border: none;
+        line-height: 2em;
+        font-size: 2em;
+    }
+
+.main {
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol {
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer {
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink {
+    background-color: #3a4f63;
+    width: 100%;
+}
+
+div.menu {
+    padding: 4px 0px 4px 8px;
+}
+
+    div.menu ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+    }
+
+        div.menu ul li a, div.menu ul li a:visited {
+            background-color: #E0E0E0;
+            border: 1px #4e667d solid;
+            color: #53709E;
+            display: block;
+            line-height: 1.35em;
+            padding: 4px 20px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+            div.menu ul li a:hover {
+                background-color: #D2D2D2;
+                color: #004B77;
+                text-decoration: none;
+            }
+
+            div.menu ul li a:active {
+                background-color: #E0E0E0;
+                color: #53709E;
+                text-decoration: none;
+            }
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    margin: 1em 0px;
+    min-width: 10em;
+    padding: 1em;
+    border: 2px solid rgb(5, 5, 71);
+    display: inline-block;
+}
+
+.fieldP {
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+    fieldset.login label, fieldset.register label, fieldset.changePassword label {
+        display: block;
+    }
+
+legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+.input-group {
+	width: 15em;
+    height: 2.5em;
+   /* margin-bottom: 1em; */
+	margin-right: 1.7em;             /* some space from the next field */
+	padding-left: 2.0em;             /* space from left to accommodate icons */
+	border: 0.1em solid rgb(12, 6, 88);        /* light gray border applied */
+	border-radius: 0.3em;            /* small border radius */
+    background-color: #ffffea;       /* light yellow field background color */
+    float: right;
+    }
+
+.wrapper {
+    position: relative;
+    display: inline;       /* displays the three input fields in the same row */
+}
+
+.wrapper .fa {
+    position: absolute;
+    padding: 0.4em;      /* sat the icons with a right spacing referring to the border */
+    font-size: 1.2em;   /* chose a suitable font size according to the size of the field */
+    color: #ccc;       /* gave icons a light gray color */
+}
+.send-btn {
+	padding: 0.5em 4em;
+	font-size: 1em;
+	margin-top: 2em;
+	background-color: #319cd5;
+	color: white;
+	border: none;
+	border-radius: 0.3em;
+}
+
+div.accountInfo {
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear {
+    clear: both;
+}
+
+.title {
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+    .loginDisplay a:link {
+        color: white;
+    }
+
+    .loginDisplay a:visited {
+        color: white;
+    }
+
+    .loginDisplay a:hover {
+        color: white;
+    }
+
+.failureNotification {
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.submitButton {
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+.wideContent {
+    width: 290px;
+    height: 130px;
+    font-family: Segoe UI;
+    padding: 10px;
+}
+
+.squareContent {
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+}
+
+.shortContent {
+    height: 105px;
+}
+
+
+
+.font14 {
+    font-size: 14px;
+}
+
+
+
+.font18 {
+    font-size: 18px;
+}
+
+
+
+.font22 {
+    font-size: 22px;
+}
+
+
+
+.qsf-ib {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: top;
+}
+
+.backgrey {
+    background-color: gray;
+}
+
+.backpink {
+    background-color: #b53e60;
+}
+
+.backturquoise {
+    background-color: turquoise;
+}
+
+.backred {
+    background-color: crimson;
+}
+
+.backorange {
+    background-color: orange;
+}
+
+.backblue {
+    background-color: #0A58C0;
+}
+
+.backpurple {
+    background-color: purple;
+}
+
+.backbrown {
+    background-color: #b53e60;
+}
+
+.backgrapefruit {
+    background-color: #FFBC8C;
+}
+
+.backskyblue {
+    background-color: #5B9FFF;
+}
+
+.forewhitesmoke {
+    color: whitesmoke;
+}
+
+.foreblack {
+    color: black;
+}
+/*Main menu*/
+
+    .mainMenu .rmRootLink .rmText {
+        padding: 17px 15px 18px;
+    }
+
+
+
+    .mainMenu .rmRootLink:hover .rmText,
+    .mainMenu .rmRootLink.rmFocused .rmText,
+    .mainMenu .rmRootLink.rmSelected .rmText,
+    .mainMenu .rmRootLink.rmExpanded .rmText {
+        padding-top: 13px;
+    }
+
+table.gradienttable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.gradienttable th {
+	padding: 0px;
+	background: #d5e3e4;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q1ZTNlNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iI2NjZGVlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiM2M4Y2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #d5e3e4 0%, #ccdee0 40%, #b3c8cc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d5e3e4), color-stop(40%,#ccdee0), color-stop(100%,#b3c8cc));
+	background: -webkit-linear-gradient(top,  #d5e3e4 0%,#ccdee0 40%,#b3c8cc 100%);
+	background: -o-linear-gradient(top,  #d5e3e4 0%,#ccdee0 40%,#b3c8cc 100%);
+	background: -ms-linear-gradient(top,  #d5e3e4 0%,#ccdee0 40%,#b3c8cc 100%);
+	background: linear-gradient(to bottom,  #d5e3e4 0%,#ccdee0 40%,#b3c8cc 100%);
+	border: 1px solid #999999;
+}
+table.gradienttable td {
+	padding: 0px;
+	background: #ebecda;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ViZWNkYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iI2UwZTBjNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZWNlYjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ebecda 0%, #e0e0c6 40%, #ceceb7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebecda), color-stop(40%,#e0e0c6), color-stop(100%,#ceceb7));
+	background: -webkit-linear-gradient(top,  #ebecda 0%,#e0e0c6 40%,#ceceb7 100%);
+	background: -o-linear-gradient(top,  #ebecda 0%,#e0e0c6 40%,#ceceb7 100%);
+	background: -ms-linear-gradient(top,  #ebecda 0%,#e0e0c6 40%,#ceceb7 100%);
+	background: linear-gradient(to bottom,  #ebecda 0%,#e0e0c6 40%,#ceceb7 100%);
+	border: 1px solid #999999;
+}
+table.gradienttable th p{
+	margin:0px;
+	padding:8px;
+	border-top: 1px solid #eefafc;
+	border-bottom:0px;
+	border-left: 1px solid #eefafc;
+	border-right:0px;
+}
+table.gradienttable td p{
+	margin:0px;
+	padding:8px;
+	border-top: 1px solid #fcfdec;
+	border-bottom:0px;
+	border-left: 1px solid #fcfdec;;
+	border-right:0px;
+}
