@@ -11,7 +11,7 @@ Dank der Community Edition von IceBreak kann jeder kostenlos damit entwickeln!
 
 Weitere Infos finden Sie auf meiner Website:
 
-www.mlitters.com
+www.mlitters.com/IceBreak.aspx
 
 Viel Spaß damit
 
