@@ -55,6 +55,10 @@ end-ds;
  chartDS.feb = FormNum('februar'); 
  chartDS.mar = FormNum('maerz'); 
 
+ // Der Einfachheit halber wird das JSON hier als String zusammengebaut
+ // Alternativ kann dies mit den mächtigen JSON Funktionen von
+ // IceBreak erledigt werden, welche eine dynamische Erstellung sehr 
+ // leicht machen (s. hierzu die REST Beispiele)
 pJson2 = '{ +
                     bindto: "#mitte", +
                     data: { +
