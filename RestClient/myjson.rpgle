@@ -9,7 +9,7 @@ ctl-opt debug(*yes) bndDir('NOXDB' :'ICEUTILITY':'QC2LE':'ICEBREAK');
     so you can with IceBreak in RPG or Cobol!
     ATTENTION:
     Please be aware that you can use any ILE Language in any format (Total Free,
-    column based or mixed) the Compilers can compile!
+    fixed format or mixed) the Compilers can compile!
 
     You can find my IceBreak Tutorials at:
     https://www.mlitters.com/IceDocu.aspx
