@@ -8,5 +8,6 @@ Sie sehen darin auch ein einfaches Beispiel, wie man ein HTML Formular mit RPG v
 
 Testen Sie das Programm einfach bei sich aus und Sie werden sehen, wie performant IceBreak arbeitet.
 
+![alt text][logo]
 
-[logo]: https://github.com/mlitters/IceBreak/blob/master/WebApp/Chart/chartform.PNG
+[logo]: https://github.com/mlitters/IceBreak/blob/master/WebApp/Chart/chartform.PNG "ChartForm Beispiel"
