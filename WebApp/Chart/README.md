@@ -7,3 +7,6 @@ Satzformaten geschieht.
 Sie sehen darin auch ein einfaches Beispiel, wie man ein HTML Formular mit RPG verwendet.
 
 Testen Sie das Programm einfach bei sich aus und Sie werden sehen, wie performant IceBreak arbeitet.
+
+
+[Logo] https://github.com/mlitters/IceBreak/blob/master/WebApp/Chart/chartform.PNG
