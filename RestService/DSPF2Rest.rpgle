@@ -2,7 +2,7 @@
 
 h bnddir('ICECAP')
 	/* 
-		In this example you see the Power of the virtual 5250 Emulator we can use 
+	In this example you see the Power of the virtual 5250 Emulator we can use 
         inside our RPG / Cobol Programs.
         With this you can create REST Services from within your 5250 Dialog 
         Applications and reuse your stable business logic!
