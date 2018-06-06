@@ -14,7 +14,7 @@ D msg             s            512    varying
 /free
 	/* 
 		In this example you see the Power of noxDB (not only XML), which is integrated 
-            in IceBreak.
+            	in IceBreak.
 		Access the DB2 Tables via SQL and return pure JSON. Then process that JSON in RPG!
 
 		You can find my IceBreak Tutorials at:
@@ -23,9 +23,9 @@ D msg             s            512    varying
 		-----------------------------------------------------------------------------
 
 		In diesem Beispiel, sehen Sie die Mächtigkeit von noxDB (not only XML), welches
-            in IceBreak integriert ist.
-            Greifen Sie per SQL auf die DB2 zu und erhalten reines JSON, welches Sie dann
-            in RPG verarbeiten!
+            	in IceBreak integriert ist.
+            	Greifen Sie per SQL auf die DB2 zu und erhalten reines JSON, welches Sie dann
+            	in RPG verarbeiten!
 
 		Meine IceBreak Tutorials finden Sie unter:
 		https://www.mlitters.com/IceDocu.aspx
