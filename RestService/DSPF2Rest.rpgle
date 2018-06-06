@@ -8,6 +8,10 @@ h bnddir('ICECAP')
         Applications and reuse your stable business logic!
         The example uses the WRKSYSSTS Screen but you can do it with EVERY
         Screen you run on your system. You don't need Source Code or anything!
+        You simulate in RPG or Cobol a User which works with the Application
+        and you insert Data into the Fields, press any Function Key and retreive
+        the data which is displayed at the Screen.
+
         Attention: This example uses the german language on the Display.
         If you run another language you need to change that.
 
@@ -21,7 +25,11 @@ h bnddir('ICECAP')
         Damit können Sie REST Services direkt aus Ihren 5250 Dialog Anwendungen
         erstellen und Ihre bewährte und stabile Geschäftslogik weiterverwenden!
         Das Beispiel nutzt den WRKSYSSTS Screen. Sie können jedoch JEDEN Screen
-        verwenden, der auf Ihrem System läuft. Sie brauchen auch keinen Quellcode!
+        verwenden, der auf Ihrem System läuft. Sie brauchen auch keinen Quellcode
+        von dem verwendeten Programm!
+        Sie simulieren einfach in RPG oder Cobol einen Anwender, der die Anwendung 
+        bedient und schreiben Daten in Felder, drücken beliebige Funktionstasten 
+        und lesen die Ergebnisse am Bildschirm aus!
 
 		Meine IceBreak Tutorials finden Sie unter:
 		https://www.mlitters.com/IceDocu.aspx
