@@ -6,7 +6,6 @@ H BndDir('NOXDB')
                                   
 D pRow            s               *                   
 D sqlHnd          s               *                   
-D sql             s            512    varying         
 D text            s            512    varying         
 D ints            s             10i 0                 
 D numbers         s             11  2                 
